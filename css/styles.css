@@ -715,6 +715,8 @@ img {
   padding: 20px 24px;
 }
 
+/*MODAL-FORM*/
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -762,4 +764,81 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-title {
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin-bottom: 30px;
+}
+
+.modal-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-field {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.modal-icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--text-color);
+
+  position: absolute;
+  left: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-wrapper {
+  position: relative;
+  margin-top: 4px;
+  display: block;
+}
+
+.phone-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.email-icon {
+  width: 15px;
+  height: 12px;
 }
