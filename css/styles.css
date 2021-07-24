@@ -894,13 +894,16 @@ img {
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/icon\ check.svg);
+  background-image: url(../images/icon_check.svg);
+  background-color: var(--accent-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
   border: none;
 }
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  background-image: url(../images/icon\ check.svg);
-  border: none;
+  border-color: var(--accent-color);
 }
 
 .modal-form-checkbox-label {
@@ -945,7 +948,7 @@ img {
 
 .modal-form-link {
   color: var(--accent-color);
-  text-decoration: var(--accent-color);
+  text-decoration: underline;
 }
 
 .footer-form {
